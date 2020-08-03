@@ -1,0 +1,12 @@
+footer {
+  font-family: "Lato, arial, sans-serif";
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80% 20%;
+
+  span {
+    margin: 0 5px;
+  }
+}

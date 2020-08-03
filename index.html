@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Alleydogs</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/Alley_Dogs.png"
+      type="image/x-icon"
+    />
+
+    <!-- changes spaces on page -->
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+
+    <!-- link to the main stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="stylesheets/styles.css"
+    />
+
+    <!-- link fontawesome stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/fa-brands.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/fa-regular.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/fa-solid.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/fontawesome.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container2">
+        <header>
+          <div id="main-logo"><img src="images/ADG_Logo_Trans.png" /></div>
+
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/Alley.Dogs.Gaming/?ref=content_filter"
+              class="facebook"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com/esports_adg"
+              class="twitter"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCshXZNa34Syd4v9_znGAKYA"
+              class="youtube"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="arrow-down">
+            <a href="#section-2"><i class="fas fa-angle-down"></i></a>
+          </div>
+        </header>
+        <main id="section-2">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'about')"
+              id="defaultOpen"
+            >
+              <span class="label">About Us</span
+              ><span class="icon"><i class="fas fa-user-circle"></i></span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'teams')">
+              <span class="label">Teams</span
+              ><span class="icon"><i class="fas fa-book"></i></span>
+            </button>
+          </div>
+          <div id="content-container">
+            <section id="about" class="tabcontent">
+              <div class="aboutGrid">
+                <h2>Who are we?</h2>
+                <p>
+                  More than just a competitive esports clan, Alleydog's Gaming
+                  is a community of South African gamers and esports fans. What
+                  began as a group of friends competing online evolved into a
+                  leading esports clan with the plan to become one of the
+                  biggest esports organizations in South Africa. With successful
+                  teams in Overwatch, Valorant, Rocket League, League of
+                  Legends, Rainbow 6 Siege and Call of Duty, ADG esports is
+                  shaping up to be the place to be for the best gamers in South
+                  Africa.
+                </p>
+                <h2>Sponsors</h2>
+                <div id="sponsors">
+                  <div id="nastech" class="sponsor">
+                    <a href="https://nastechcomputers.co.za/" target="_blank">
+                      <img src="images/nastech.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div id="straightchicane" class="sponsor">
+                    <a
+                      href="https://www.facebook.com/pages/category/Driving-School/Straight-Chicane-104305531332415/"
+                      target="_blank"
+                    >
+                      <img src="images/straightchicane.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="teams" class="tabcontent">
+              <div id="teamsGrid">
+                <h2>Current Rosters</h2>
+
+                <div id="teamsContainer">
+                  <div id="teamTabs">
+                    <button
+                      class="teamLinks"
+                      onclick="openEdu(event, 'valorant')"
+                      id="defaultOpen2"
+                    >
+                      <img src="images/valorant.png" />
+                    </button>
+                    <button
+                      class="teamLinks"
+                      onclick="openEdu(event, 'rleague')"
+                    >
+                      <img src="images/rleague.png" />
+                    </button>
+                    <button
+                      class="teamLinks"
+                      onclick="openEdu(event, 'loleague')"
+                    >
+                      <img src="images/loleague.png" />
+                    </button>
+                    <button
+                      class="teamLinks"
+                      onclick="openEdu(event, 'r6siege')"
+                    >
+                      <img src="images/r6.png" />
+                    </button>
+                    <button
+                      class="teamLinks"
+                      onclick="openEdu(event, 'overwatch')"
+                    >
+                      <img src="images/overwatch.png" />
+                    </button>
+                  </div>
+                  <div id="teamContentContainer">
+                    <div id="valorant" class="teamContent">VALORANT</div>
+                    <div id="rleague" class="teamContent">ROCKET LEAGUE</div>
+                    <div id="loleague" class="teamContent">
+                      LEAGUE OF LEGENDS
+                    </div>
+                    <div id="r6siege" class="teamContent">RAINBOW 6 SIEGE</div>
+                    <div id="overwatch" class="teamContent">OVERWATCH</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <footer>
+            <span></span>
+            <span></span>
+            <span>Copyright © 2020 Alleydogs - All Rights Reserved.</span>
+            <span></span>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script>
+      document.getElementById("defaultOpen").click();
+
+      function openTab(evt, sectionName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(sectionName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script>
+      document.getElementById("defaultOpen2").click();
+
+      function openEdu(evt, sectionName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("teamContent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("teamLinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " teamActive",
+            ""
+          );
+        }
+
+        document.getElementById(sectionName).style.display = "block";
+        evt.currentTarget.className += " teamActive";
+      }
+    </script>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("contactDetails");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("contactShow");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

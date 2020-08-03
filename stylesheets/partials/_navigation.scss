@@ -1,0 +1,37 @@
+.tab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tablinks {
+  border: none;
+  text-align: center;
+  background-color: whitesmoke;
+  color: $color2;
+  // border: 1px solid $whitesmoke-darker;
+  // border-top-color: transparent;
+  height: 100%;
+
+  &:hover {
+    color: $color1;
+    background: linear-gradient($whitesmoke-dark, whitesmoke);
+    cursor: pointer;
+    // border-bottom: 1px solid transparent;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+.active {
+  background: linear-gradient($whitesmoke-darker, whitesmoke);
+}
+
+.teamActive {
+  background: linear-gradient($whitesmoke-darker, whitesmoke);
+}
